@@ -8,7 +8,7 @@ exports.insert = function(db, doc, callback) {
       process.exit(1);
     }
     callback(null);
-  }
+  });
 };
 
 /*
@@ -23,6 +23,6 @@ exports.byDirector = function(db, director, callback) {
         console.log(error);
         process.exit(1);
       }
-	  callback(null, []);
-	}
+      callback(null, docs);
+    });
 };

@@ -32,6 +32,8 @@ mongodb.MongoClient.connect(uri, function(error, db) {
 		  console.log(error);
 		  process.exit(1);
 	  }
+          db.collection('movies').find({'director': George Lucas'}), function(error) {
+}
 	  console.log(result);
   });
 });
